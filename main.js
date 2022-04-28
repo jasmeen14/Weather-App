@@ -12,11 +12,11 @@ button.addEventListener('click',()=>{
     //.then(data => console.log(data))
      .then(data =>{
         latValue = data['0']['lat'];
-        console.log('latValue:'+latValue)
+       // console.log('latValue:'+latValue)
         lonValue = data['0']['lon'];
-        console.log('lonValue:'+lonValue)
+       // console.log('lonValue:'+lonValue)
 
-        console.log('https://api.openweathermap.org/data/2.5/weather?lat='+latValue+'&lon='+lonValue+'&appid=6d615fbdb0fa1842449678692e31cdd1' )
+        //console.log('https://api.openweathermap.org/data/2.5/weather?lat='+latValue+'&lon='+lonValue+'&appid=6d615fbdb0fa1842449678692e31cdd1' )
         fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latValue+'&lon='+lonValue+'&appid=6d615fbdb0fa1842449678692e31cdd1')
        .then(response => response.json())
        //.then(data => console.log(data))
