@@ -7,7 +7,7 @@ var country = document.querySelector('.country');
 
 button.addEventListener('click',()=>{
     //console.log('http://api.openweathermap.org/geo/1.0/direct?q='+inputValue.value+'&appid=6d615fbdb0fa1842449678692e31cdd1')
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q='+inputValue.value+'&appid=6d615fbdb0fa1842449678692e31cdd1')
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q='+inputValue.value+'&appid=6d615fbdb0fa1842449678692e31cdd1')
     .then(response => response.json())
     //.then(data => console.log(data))
      .then(data =>{
