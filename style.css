@@ -6,38 +6,41 @@
 
 body{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
     font-family: sans-serif;
-    color: white;
 }
 
-.location, .temperature{
-    height: 30vh;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.input{
+    text-align: center;
+    margin: 100px 0;
 }
 
-.temperature{
-    flex-direction: column;
+input[type="text"]{
+    height: 50px;
+    width: 600px;
+    background: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px;
+
+}
+input[type="submit"]{
+    height: 50px;
+    width: 100px;
+    background: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
 }
 
-.degree-section{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.display{
+    text-align: center;
 }
 
-.degree-section span{
-    margin: 10px;
-    font-size: 30px;
-}
 
-.degree-section h2{
-    font-size: 40px;
-}
+
